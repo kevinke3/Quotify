@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotify - Modern Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quotify</h1>
+            <p>Find inspiration in every quote</p>
+        </header>
+
+        <main>
+            <div class="quote-card">
+                <div id="quote-content">
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <p>Fetching new quote...</p>
+                    </div>
+                    <div class="quote-text" id="quote-text">
+                        <i class="fas fa-quote-left"></i>
+                        <span id="text">The best way to predict the future is to create it.</span>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="quote-author" id="author">- Peter Drucker</div>
+                </div>
+                
+                <div class="actions">
+                    <button id="new-quote" class="btn primary">
+                        <i class="fas fa-sync-alt"></i> New Quote
+                    </button>
+                    <button id="copy-quote" class="btn secondary">
+                        <i class="far fa-copy"></i> Copy Quote
+                    </button>
+                    <button id="tweet-quote" class="btn twitter">
+                        <i class="fab fa-twitter"></i> Tweet Quote
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://quotable.io" target="_blank">Quotable API</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
